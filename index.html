@@ -13,7 +13,7 @@
   </head>
   <body>
     <div id="navbar-container">
-      <!--<a href="#gallery-container">Galerie</a>-->
+      <a href="#gallery-container">Art</a>
       <!-- TODO: Consider adding a "published work" section -->
     </div>
     <div id="hero-container">
@@ -51,29 +51,31 @@
         ></iframe>
       </div>
     </div>
+    <!-- TODO: Simply put a "mailto:..." in action instead of form here -->
     <div id="contact-container">
       <div>
         <h1>Contact</h1>
-        <form action="post">
-          <div id="name-container" class="form-element">
-            <label for="name">Name: </label>
-            <input type="text" id="name" required />
-          </div>
-          <div id="email-container" class="form-element">
-            <label for="email">Email: </label>
-            <input type="text" id="email" required />
+        <form action="">
+          <div id="subject-container" class="form-element">
+            <label for="subject">Subject: </label>
+            <input type="text" id="subject" required />
           </div>
           <div id="message-container" class="form-element">
             <label for="message">Message: </label>
             <textarea name="message" id="message"></textarea>
           </div>
-          <input type="submit" value="Send" class="contact-button" />
+          <input
+            onClick="sendMail()"
+            type="submit"
+            value="Send"
+            class="contact-button"
+          />
         </form>
       </div>
       <img src="assets/hands.jpg" alt="" />
     </div>
     <div id="footer-container">
-      <h2>Find Me On Social Media!</h2>
+      <h2>Social Media</h2>
       <div id="social-media-links-container">
         <a
           href="https://www.instagram.com/_verocayden_/"
