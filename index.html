@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="script.js"></script>
+    <title>Verocayden</title>
+  </head>
+  <body>
+    <div id="navbar-container">
+      <!--<a href="#gallery-container">Galerie</a>-->
+      <!-- TODO: Consider adding a "published work" section -->
+    </div>
+    <div id="hero-container">
+      <div id="hero-container-text-content">
+        <h1>Victoria-Mae Carrière</h1>
+        <h2>@Verocayden, Character Artist</h2>
+        <p>
+          Digital artist and student in software engineering, I want to build
+          bridges between art, science, and technology. Through my creations of
+          both Western and Easternb inspirations, I want to connect communities
+          from coast to coast.
+        </p>
+        <button class="contact-button">Contact Me</button>
+      </div>
+      <img src="assets/profile_picture.png" alt="" id="avatar" />
+    </div>
+    <div id="gallery-container">
+      <img src="assets/mask.jpg" alt="" />
+      <div class="gallery-column">
+        <img src="assets/tea.png" alt="" />
+        <img src="assets/giraffe.jpg" alt="" />
+      </div>
+      <div class="gallery-column">
+        <img src="assets/eye.gif" alt="" />
+        <img src="assets/harmony.png" alt="" />
+        <iframe
+          min-width="320"
+          min-height="180"
+          src="https://www.youtube.com/embed/6PvZQ3XOKqE"
+          title="Zuzu’s misadventures – Animated short film"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div id="contact-container">
+      <div>
+        <h1>Contact</h1>
+        <form action="post">
+          <div id="name-container" class="form-element">
+            <label for="name">Name: </label>
+            <input type="text" id="name" required />
+          </div>
+          <div id="email-container" class="form-element">
+            <label for="email">Email: </label>
+            <input type="text" id="email" required />
+          </div>
+          <div id="message-container" class="form-element">
+            <label for="message">Message: </label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <input type="submit" value="Send" class="contact-button" />
+        </form>
+      </div>
+      <img src="assets/hands.jpg" alt="" />
+    </div>
+    <div id="footer-container">
+      <h2>Find Me On Social Media!</h2>
+      <div id="social-media-links-container">
+        <a
+          href="https://www.instagram.com/_verocayden_/"
+          class="social-media-link"
+          ><i class="fa-brands fa-instagram"></i> Instagram</a
+        >
+        <a href="https://www.facebook.com/verocayden" class="social-media-link"
+          ><i class="fa-brands fa-facebook"></i> Facebook</a
+        >
+        <a
+          href="https://www.youtube.com/@verocayden502/featured"
+          class="social-media-link"
+          ><i class="fa-brands fa-youtube"></i> YouTube</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
