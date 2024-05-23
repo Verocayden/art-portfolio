@@ -7,13 +7,46 @@ img {
   max-height: auto;
 }
 
+#navbar-container {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 2rem;
+  padding: 1rem;
+}
+
+#navbar-content {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  align-items: center;
+}
+
+#navbar-logo {
+  font-size: 1.4rem;
+}
+
+#navbar-sections {
+  display: flex;
+  gap: 1.5rem;
+}
+
+#navbar-container a {
+  text-decoration: none;
+  color: black;
+}
+
 #hero-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100vw;
   padding-left: 8rem;
   padding-right: 8rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.25rem;
+  margin-top: 2rem;
 }
 
 #avatar {
@@ -28,7 +61,7 @@ img {
 }
 
 #hero-container-text-content h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 #hero-container-text-content h2 {
