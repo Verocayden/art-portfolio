@@ -61,6 +61,10 @@ img {
   transform: scale(1.1);
 }
 
+#toggle-language {
+  cursor: pointer;
+}
+
 #hero-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -107,6 +111,12 @@ img {
   background-color: black;
   color: white;
   transition: ease-in-out 0.5s;
+}
+
+#hero-contact-button p {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 
 .contact-button:hover {
@@ -159,6 +169,16 @@ img {
 .comic-text-container a {
   text-decoration: none;
   color: black;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.comic-cover-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #gallery-container {
@@ -188,6 +208,7 @@ img {
   flex-direction: column;
   gap: 1.25rem;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 
 #contact-container form input,

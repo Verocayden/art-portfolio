@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html language="en">
   <head>
     <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <script src="script.js"></script>
+
     <title>Verocayden</title>
   </head>
   <body>
@@ -16,27 +18,40 @@
       <div id="navbar-content">
         <a href="#hero-container" id="navbar-logo">√C</a>
         <div id="navbar-sections">
-          <a href="#hero-container">About</a>
-          <a href="#artwork-container">Artwork</a>
-          <a href="#comics-container">Comics</a>
+          <a href="#hero-container" key="nav-about" class="language">About</a>
+          <a href="#artwork-container" key="nav-artwork" class="language"
+            >Artwork</a
+          >
+          <a href="#comics-container" key="nav-comics" class="language"
+            >Comics</a
+          >
           <button id="navbar-contact-button">
-            <a href="#contact-container">Contact</a>
+            <a href="#contact-container" key="nav-contact" class="language"
+              >Contact</a
+            >
           </button>
+          <p id="toggle-language" key="language" class="language translate">
+            FR
+          </p>
         </div>
       </div>
     </div>
     <div id="hero-container">
       <div id="hero-container-text-content">
-        <h1>Victoria-Mae Carrière</h1>
-        <h2>@Verocayden, Character Artist</h2>
-        <p>
+        <h1 key="hero-title" class="language">Victoria-Mae Carrière</h1>
+        <h2 key="hero-subtitle" class="language">
+          @Verocayden, Character Artist
+        </h2>
+        <p key="hero-content" class="language">
           Digital artist and student in software engineering, I want to build
           bridges between art, science, and technology. Through my creations of
           both Western and Eastern inspirations, I want to connect communities
           from coast to coast.
         </p>
         <a href="#contact-container"
-          ><button class="contact-button">Contact Me</button></a
+          ><button class="contact-button" id="hero-contact-button">
+            <p key="hero-button" class="language">Contact Me</p>
+          </button></a
         >
       </div>
       <img src="assets/profile_picture.png" alt="" id="avatar" />
@@ -65,28 +80,41 @@
       </div>
     </div>
     <div id="comics-container">
-      <h1>Comics</h1>
+      <h1 key="comics-section-title" class="language">Comics</h1>
       <div id="comics-subcontainer">
         <div class="comic-container">
-          <img src="assets/nos_masques.png" alt="" />
+          <div class="comic-cover-image">
+            <img src="assets/nos_masques.png" alt="" />
+          </div>
           <div class="comic-text-container">
-            <h2>Nos Masques (FR)</h2>
+            <h2 key="comic1-title" class="language">Nos Masques (FR)</h2>
             <a href="https://www.isekaitouch.com/boutique"
-              ><i class="fa-solid fa-book-open"></i> Published in Isekai Touch
+              ><i class="fa-solid fa-book-open"></i>
+              <p key="comic1-publisher" class="language">
+                Published in Isekai Touch
+              </p>
               #1</a
             >
             <a href="https://otakulounge.com/top-10-bourse-manga-2022/"
-              ><i class="fa-solid fa-star"></i> 2nd place at O-Taku Manga
+              ><i class="fa-solid fa-star"></i>
+              <p key="comic1-info" class="language">
+                2nd place at O-Taku Manga
+              </p>
               Contest 2022</a
             >
           </div>
         </div>
         <div class="comic-container">
-          <img src="assets/annuelle.png" alt="" />
+          <div class="comic-cover-image">
+            <img src="assets/annuelle.png" alt="" />
+          </div>
           <div class="comic-text-container">
-            <h2>Annuelle (FR)</h2>
+            <h2 key="comic2-title" class="language">Annuelle (FR)</h2>
             <a href="https://revueplanches.com/produit/numero-18/"
-              ><i class="fa-solid fa-book-open"></i> Published in PLANCHES
+              ><i class="fa-solid fa-book-open"></i>
+              <p key="comic2-publisher" class="language">
+                Published in PLANCHES
+              </p>
               #18</a
             >
           </div>
@@ -95,28 +123,35 @@
     </div>
     <div id="contact-container">
       <div>
-        <h1>Contact</h1>
-        <form action="">
+        <h1 key="contact-section-title" class="language">Contact</h1>
+        <form action="" id="contact-form">
           <div id="subject-container" class="form-element">
-            <label for="subject">Subject: </label>
+            <label for="subject" key="contact-subject" class="language"
+              >Subject:
+            </label>
             <input type="text" id="subject" required />
           </div>
           <div id="message-container" class="form-element">
-            <label for="message">Message: </label>
+            <label for="message" key="contact-message" class="language"
+              >Message:
+            </label>
             <textarea name="message" id="message"></textarea>
           </div>
-          <input
-            onClick="sendMail()"
-            type="submit"
-            value="Send"
-            class="contact-button"
-          />
         </form>
+        <button
+          key="send-button"
+          onClick="sendMail()"
+          type="submit"
+          form="contact-form"
+          class="contact-button language"
+        >
+          Send
+        </button>
       </div>
       <img src="assets/hands.jpg" alt="" />
     </div>
     <div id="footer-container">
-      <h2>Social Media</h2>
+      <h2 key="social-media-title" class="language">Social Media</h2>
       <div id="social-media-links-container">
         <a
           href="https://www.instagram.com/_verocayden_/"
@@ -134,4 +169,5 @@
       </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
