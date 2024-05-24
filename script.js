@@ -58,6 +58,7 @@ $(function () {
   });
 
   function changeLanguage(language) {
+    console.log(language);
     $(".language").each(function (index, element) {
       $(this).text(translation[language][$(this).attr("key")]);
     });
