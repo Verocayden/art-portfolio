@@ -58,7 +58,6 @@ $(function () {
   });
 
   function changeLanguage(language) {
-    console.log(language);
     if (!language || !(language === "EN" || language === "FR")) {
       language = "EN";
     }
@@ -71,7 +70,6 @@ $(function () {
 function sendMail() {
   const subject = document.getElementById("subject").value;
   const body = document.getElementById("message").value;
-  console.log("Sending email");
   window.location.href =
     "mailto:victoca@bell.net?subject=" + subject + "&body=" + body;
 }
