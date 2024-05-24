@@ -24,3 +24,22 @@ function sendMail() {
   window.location.href =
     "mailto:victoca@bell.net?subject=" + subject + "&body=" + body;
 }
+
+const menu = document.querySelector("#mobile-menu");
+const navLogo = document.querySelector("#navbar-logo");
+const menuLinks = document.querySelector("#navbar-sections");
+const mobileMenu = () => {
+  menu.classList.toggle("is-active");
+  menuLinks.classList.toggle("active");
+};
+menu.addEventListener("click", mobileMenu);
+const hideMobileMenu = () => {
+  const menuBars = document.querySelector(".is-active");
+
+  if (window.innerWidth <= 800 && menuBars) {
+    menu.classList.toggle("is-active");
+    menuLinks.classList.remove("active");
+  }
+};
+menuLinks.addEventListener("click", hideMobileMenu);
+navLogo.addEventListener("click", hideMobileMenu);
