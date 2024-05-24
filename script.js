@@ -58,6 +58,7 @@ $(function () {
   });
 
   function changeLanguage(language) {
+    console.log(language);
     if (!language) {
       return;
     }
