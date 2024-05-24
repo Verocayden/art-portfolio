@@ -59,8 +59,8 @@ $(function () {
 
   function changeLanguage(language) {
     console.log(language);
-    if (!language) {
-      return;
+    if (!language || !(language === "EN" || language === "FR")) {
+      language = "EN";
     }
     $(".language").each(function (index, element) {
       $(this).text(translation[language][$(this).attr("key")]);
@@ -69,8 +69,9 @@ $(function () {
 });
 
 function sendMail() {
-  let subject = document.getElementById("subject").value;
-  let body = document.getElementById("message").value;
+  const subject = document.getElementById("subject").value;
+  const body = document.getElementById("message").value;
+  console.log("Sending email");
   window.location.href =
     "mailto:victoca@bell.net?subject=" + subject + "&body=" + body;
 }
