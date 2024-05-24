@@ -2,6 +2,6 @@
 
 ## TODO:
 
-- Add "Published Work" section (for Nos Masques and Annuelle);
+- Add French Translation + Toggle Button in the Navbar and in the Footer
+- Make the navbar change to hamburger menu if smaller screen.
 - Add interactivity to images (e.g.: clicking on the image makes it appear bigger, with a description if possible);
-- Make the page responsive.

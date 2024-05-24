@@ -17,9 +17,11 @@
         <a href="#hero-container" id="navbar-logo">Verocayden</a>
         <div id="navbar-sections">
           <a href="#hero-container">About</a>
-          <a href="#gallery-container">Artwork</a>
-          <a href="#contact-container">Contact</a>
-          <!-- TODO: Consider adding a "published work" section -->
+          <a href="#artwork-container">Artwork</a>
+          <a href="#comics-container">Comics</a>
+          <button id="navbar-contact-button">
+            <a href="#contact-container">Contact</a>
+          </button>
         </div>
       </div>
     </div>
@@ -30,7 +32,7 @@
         <p>
           Digital artist and student in software engineering, I want to build
           bridges between art, science, and technology. Through my creations of
-          both Western and Easternb inspirations, I want to connect communities
+          both Western and Eastern inspirations, I want to connect communities
           from coast to coast.
         </p>
         <a href="#contact-container"
@@ -39,28 +41,58 @@
       </div>
       <img src="assets/profile_picture.png" alt="" id="avatar" />
     </div>
-    <div id="gallery-container">
-      <img src="assets/mask.jpg" alt="" />
-      <div class="gallery-column">
-        <img src="assets/tea.png" alt="" />
-        <img src="assets/giraffe.jpg" alt="" />
-      </div>
-      <div class="gallery-column">
-        <img src="assets/eye.gif" alt="" />
-        <img src="assets/harmony.png" alt="" />
-        <iframe
-          min-width="320"
-          min-height="180"
-          src="https://www.youtube.com/embed/6PvZQ3XOKqE"
-          title="Zuzu’s misadventures – Animated short film"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+    <div id="artwork-container">
+      <div id="gallery-container">
+        <img src="assets/mask.jpg" alt="" />
+        <div class="gallery-column">
+          <img src="assets/tea.png" alt="" />
+          <img src="assets/giraffe.jpg" alt="" />
+        </div>
+        <div class="gallery-column">
+          <img src="assets/eye.gif" alt="" />
+          <img src="assets/harmony.png" alt="" />
+          <iframe
+            min-width="320"
+            min-height="180"
+            src="https://www.youtube.com/embed/6PvZQ3XOKqE"
+            title="Zuzu’s misadventures – Animated short film"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </div>
-    <!-- TODO: Simply put a "mailto:..." in action instead of form here -->
+    <div id="comics-container">
+      <h1>Comics</h1>
+      <div id="comics-subcontainer">
+        <div class="comic-container">
+          <img src="assets/nos_masques.png" alt="" />
+          <div class="comic-text-container">
+            <h2>Nos Masques (FR)</h2>
+            <a href="https://www.isekaitouch.com/boutique"
+              ><i class="fa-solid fa-book-open"></i> Published in Isekai Touch
+              #1</a
+            >
+            <a href="https://otakulounge.com/top-10-bourse-manga-2022/"
+              ><i class="fa-solid fa-star"></i> 2nd place at O-Taku Manga
+              Contest 2022</a
+            >
+          </div>
+        </div>
+        <div class="comic-container">
+          <img src="assets/annuelle.png" alt="" />
+          <div class="comic-text-container">
+            <h2>Annuelle (FR)</h2>
+            <a href="https://revueplanches.com/produit/numero-18/"
+              ><i class="fa-solid fa-book-open"></i> Published in PLANCHES
+              #18</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="contact-container">
       <div>
         <h1>Contact</h1>
