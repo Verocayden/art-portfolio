@@ -76,6 +76,9 @@ function sendMail() {
     "mailto:victoca@bell.net?subject=" + subject + "&body=" + body;
 }
 
+const sendButton = document.querySelector("#send-contact-form-button");
+sendButton.addEventListener("click", sendMail);
+
 const menu = document.querySelector("#mobile-menu");
 const navLogo = document.querySelector("#navbar-logo");
 const menuLinks = document.querySelector("#navbar-sections");
