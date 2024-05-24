@@ -14,7 +14,10 @@ img {
   left: 0;
   width: 100vw;
   height: 2rem;
-  padding: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 0;
+  padding-bottom: 1rem;
   z-index: 999;
 }
 
@@ -28,6 +31,9 @@ img {
 
 #navbar-logo {
   font-size: 1.4rem;
+  padding: 0.25rem;
+  border-radius: 3pt;
+  border: 1.5pt solid black;
 }
 
 #navbar-sections {
