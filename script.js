@@ -1,4 +1,4 @@
-const response = await fetch("./assets/translation.json");
+const response = await fetch("assets/translation.json");
 const translation = await response.json();
 
 $(function () {
